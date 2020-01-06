@@ -30,8 +30,20 @@
 
 # the correct example: 2 * (5-1) = 8
 
-# 15. lesson - Crafting a health potion
+# 15. and 16. lesson - Crafting a health potion
 # represent health in simple manner - as a number
-health = 50
+
 import random
-random.randint(10,20)
+health = 50
+
+# easy, for middle 2, difficult 3
+difficulty = 3
+
+# potion_health = random.randint(25,50) 
+# print(potion_health)
+
+# to employ difficulty
+
+potion_health = int(random.randint(25,50) / difficulty)
+all_health = potion_health + health
+print(all_health)

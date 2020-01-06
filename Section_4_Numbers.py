@@ -31,4 +31,7 @@
 # the correct example: 2 * (5-1) = 8
 
 # 15. lesson - Crafting a health potion
-# 
+# represent health in simple manner - as a number
+health = 50
+import random
+random.randint(10,20)

@@ -33,17 +33,25 @@
 # 15. and 16. lesson - Crafting a health potion
 # represent health in simple manner - as a number
 
-import random
-health = 50
+# import random
+# health = 50
 
-# easy, for middle 2, difficult 3
-difficulty = 3
+# # easy, for middle 2, difficult 3
+# difficulty = 3
 
-# potion_health = random.randint(25,50) 
-# print(potion_health)
+# # potion_health = random.randint(25,50) 
+# # print(potion_health)
 
-# to employ difficulty
+# # to employ difficulty
 
-potion_health = int(random.randint(25,50) / difficulty)
-all_health = potion_health + health
-print(all_health)
+# potion_health = int(random.randint(25,50) / difficulty)
+# all_health = potion_health + health
+# print(all_health)
+
+# Python math module
+# rounding numbers to the nearest integer
+result = round(1.5)
+print(result)
+
+# import math module
+import math module

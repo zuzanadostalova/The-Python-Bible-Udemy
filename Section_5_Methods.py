@@ -8,7 +8,7 @@
 # print(text.count("day"))
 
 # x = "Happy Birthday"
-# # lower/upper - without changing the original string, strings are inmutable data 
+# # lower/upper - without changing the original string, strings are immutable data 
 # # types = unchangable
 # print(x.lower())
 # print(x.upper())
@@ -75,7 +75,7 @@ print(x.find("jioshff"))
 # Both index and finding are case sensitive
 # That is where .upper() or .lower() come at handy
 
-# To strip a part of the code (Keep in mind that string is inmutable!)
+# To strip a part of the code (Keep in mind that string is immutable!)
 y = "0000happybday0000"
 print(y.strip("0"))
 

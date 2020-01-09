@@ -1,4 +1,4 @@
-# # 26. and 27. lesson - Project 3 - Email slicer
+# # 26., 27., and 28. lesson - Project 3 - Email slicer
 # # string = iterable data type - you can go step by step along it until you get to the end
 # # each of these steps is called element and it has number that corresponds to its position
 # # by using its index, you can get the element
@@ -119,3 +119,13 @@ output = "Your  user name is {}  and your domain name is {}".format(user, domain
 print(output)
 
 # display the output msg
+
+# 29. lesson - Section overview
+# strings - made by '', "", """ """
+# fix broken strings
+# created hello world
+# how to work with incompatible data types
+# string methods - index, find, functions 
+# slices
+# quick quiz + coding challenge
+# email slicer project

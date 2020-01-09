@@ -120,5 +120,6 @@ print(math.log10(1000))
 math.log2(8)
 print(math.log2(8))
 
-# 19. lesson - Section overview
-# for data analysis - pandas, NumPy, SciPy
+# knowledge test
+
+# coding challenge - calculations, assigning variables

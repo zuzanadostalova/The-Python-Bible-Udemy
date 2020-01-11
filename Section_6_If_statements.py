@@ -37,9 +37,16 @@ else:
 # review - running only if True
 if condition:
     code
-elif condition2
+# if the first condition is True, it will run, if False, then the program checks the second c.
+elif condition2:
     code2
-elif condition3
+# if the second condition is True, it will run, if False, then the program checks the third c.
+elif condition3:
     code3
+# if the third condition is True, it will run, if False, then the program checks the fourth c.
 else:
     code4
+# we can have variables in conditions that can be updated from the different places in the code
+# or automatically updated
+
+# Coding challenge to revise num1 > num2, num1 == num2, num1 < num2

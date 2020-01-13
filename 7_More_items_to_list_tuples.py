@@ -53,6 +53,7 @@ print(C)
 #         2
 #         3
 
+# Lists - multiple assignment
 D, E, F = [1,2,3]
 print(D)
 print(E)
@@ -61,7 +62,7 @@ print(F)
 #         2
 #         3
 
-
+# Strings - multiple assignment
 G,H,I = "789"
 print(G)
 print(H)
@@ -69,3 +70,8 @@ print(I)
 # Output: 7
 #         8
 #         9
+
+# tuples: to protect valuable data, through tuple function or by separating few values with 
+# comas, surround tuple def with parentheses
+
+# how to do multiple assignments with tuples, lists, and strings

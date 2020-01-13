@@ -45,32 +45,9 @@ print(our_list[2][0])
 print(our_list[2][1:])
 # Output: [4, 5]
 
-# for the contents of the sublist (slicing):
+# for the contents of the sublist:
 print(our_list[2][0::2])
 # Output: [3, 5]
 
 # functions for two variables with the same name "our_list"
 
-# Lists are used for tables in Py
-our_table = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-print(our_table)
-
-print(our_table[0])
-# Output: [1, 2, 3]
-
-print(our_table[0][1])
-# Output: 2
-# the first square bracket is the row, the second one is the column
-
-print(our_table[1][2])
-# Output: 6
-
-print(our_table[2][1])
-# Output: 8
-
-# This is useful for Rubic's cube solving robot - where the colours on the cube are
-
-# slicing -> sublist:
-print(our_table[1][1:])
-
-# slices do not modify a list

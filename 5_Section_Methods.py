@@ -1,56 +1,56 @@
-# # 24. lesson - String methods
-# # string.method
-# print("hello".count("e"))
+# 24. lesson - String methods
+# string.method
+print("hello".count("e"))
 
-# text = "Happy birthday"
-# # text = "Happy birthday".count("a")
-# print(text)
-# print(text.count("day"))
+text = "Happy birthday"
+# text = "Happy birthday".count("a")
+print(text)
+print(text.count("day"))
 
-# x = "Happy Birthday"
-# # lower/upper - without changing the original string, strings are immutable data 
-# # types = unchangable
-# print(x.lower())
-# print(x.upper())
+x = "Happy Birthday"
+# lower/upper - without changing the original string, strings are immutable data 
+# types = unchangable
+print(x.lower())
+print(x.upper())
 
-# # to change it permanently - we need to assign x to upper case, overwriting
-# x = x.upper()
+# to change it permanently - we need to assign x to upper case, overwriting
+x = x.upper()
+print(x)
+
+# to change it permanently - we need to assign x to lower case, overwriting
+x = x.lower()
+print(x)
+
+# Overwritten to the first capital letter
+# x = x.capitalize()
 # print(x)
 
-# # to change it permanently - we need to assign x to lower case, overwriting
-# x = x.lower()
-# print(x)
+print(x.title())
+print(x)
+# Overwritten to both capital letters
+x = x.title()
+print(x)
 
-# # Overwritten to the first capital letter
-# # x = x.capitalize()
-# # print(x)
+# How to find out which case is the word in?
+print(x.islower())
+# output: False
+print(x.isupper())
+# output: False
+print(x.istitle())
+# output: True
+# Is everything letters in the string? False, because there is a space
+print(x.isalpha())
+# output: False
 
-# print(x.title())
-# print(x)
-# # Overwritten to both capital letters
-# x = x.title()
-# print(x)
+print("abcd".isalpha())
+# output: True
 
-# # How to find out which case is the word in?
-# print(x.islower())
-# # output: False
-# print(x.isupper())
-# # output: False
-# print(x.istitle())
-# # output: True
-# # Is everything letters in the string? False, because there is a space
-# print(x.isalpha())
-# # output: False
+print("123".isdigit())
+# output: True
 
-# print("abcd".isalpha())
-# # output: True
-
-# print("123".isdigit())
-# # output: True
-
-# y = "happybirthday123"
-# print(y.isalnum())
-# # output: True
+y = "happybirthday123"
+print(y.isalnum())
+# output: True
 
 y = "happybirthday!123"
 print(y.isalnum())

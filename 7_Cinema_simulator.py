@@ -1,9 +1,10 @@
 # 45. lesson - Cinema simulator
+# the first item in the list - age, the second one - number of tickets
 films = {
-    "Finding Dory":[3.5],
-    "Bourne":[18.5],
-    "Tarzan":[15.5],
-    "Ghost busters":[12.5]
+    "Finding Dory":[3,5],
+    "Bourne":[18,5],
+    "Tarzan":[15,5],
+    "Ghost busters":[12,5]
 }
 
 # # print(films["Finding Dory"])
@@ -13,7 +14,7 @@ films = {
 #     answer = input("Hello. What movie would you like to see? (Finding Dory, Bourne, Tarzan, or Ghost Busters) ").strip().title()
 #     if answer == "Finding Dory":
 #         age = input("What is your age? ")  
-#         if float(age) >= 3.5:
+#         if float(age) >= 3:
 #             requested_tickets = input("How many tickets would you like to buy? ")
 #             tickets = 3
 #             if tickets >= int(requested_tickets):
@@ -31,7 +32,7 @@ films = {
 #     elif answer == "Bourne":
 #         age = input("What is your age? ")
         
-#         if float(age) >= 18.5:
+#         if float(age) >= 18:
 #             requested_tickets = input("How many tickets would you like to buy? ")
 #             tickets = 20
 #             if tickets >= int(requested_tickets):
@@ -48,7 +49,7 @@ films = {
 #     elif answer == "Tarzan":
 #         age = input("What is your age? ")
 
-#         if float(age) >= 15.5:
+#         if float(age) >= 15:
 #             requested_tickets = input("How many tickets would you like to buy? ")
 #             tickets = 200
 #             if tickets >= int(requested_tickets):
@@ -64,7 +65,7 @@ films = {
 #     elif answer == "Ghost Busters":
 #         age = input("What is your age? ")
 
-#         if float(age) >= 12.5:
+#         if float(age) >= 12:
 #             requested_tickets = input("How many tickets would you like to buy? ")
 #             tickets = 10
 #             if tickets >= int(requested_tickets):
@@ -90,10 +91,13 @@ while True:
             if num_seats > 0:
                 print("Enjoy the film.")
                 films[choice][1] = films[choice][1] - 1
+            else:
+                print("Sorry, we are sold out!")
             
         else:
             print("You are too young to watch movie.")
+    else:
+        print("We do not have that movie...")
 
-# breaks done on line 88
- 
+
 

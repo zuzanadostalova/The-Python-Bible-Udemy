@@ -13,16 +13,18 @@ while True:
     if answer == "Finding Dory":
         age = input("What is your age? ")  
 
-        # age_limit = films[0]
-        if age >= str(films["Finding Dory"]):
+        # age_limit = []
+        # if age >= age_limit:
             input("How many tickets would you like to buy? ")
     
-    # if answer == "Bourne":
-    #     age = input("What is your age? ")
+    elif answer == "Bourne":
+        age = input("What is your age? ")
+            input("How many tickets would you like to buy? ")
 
-    # if answer == "Tarzan":
-    #     age = input("What is your age? ")
+    elif answer == "Tarzan":
+        age = input("What is your age? ")
+            input("How many tickets would you like to buy? ")
 
-    # if answer == "Ghost busters":
-    #     age = input("What is your age? ")
-
+    elif answer == "Ghost busters":
+        age = input("What is your age? ")
+            input("How many tickets would you like to buy? ")

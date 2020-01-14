@@ -99,5 +99,17 @@ while True:
     else:
         print("We do not have that movie...")
 
+# 46. lesson - overview
+# What lists are, how to create them
+# lists are iterable
+# multidimensional data structures - tables (Rubic's cube)
+# built Travis
 
+# Tuples - what and how
+# multiple assignment
+
+# Dictionaries - what and how
+# keys(), values(), items()
+# subdictionaries and lists inside dictionaries
+# cinema booking system
 

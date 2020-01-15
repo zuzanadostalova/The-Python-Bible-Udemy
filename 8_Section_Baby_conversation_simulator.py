@@ -1,16 +1,16 @@
 # 49. lesson - Baby conversation simulator
 
-# # My solution:
-# while True:
-#     answer = input("Why is the sky blue? ").strip().lower()
-#     if answer == "just because":
-#         break
+# My solution:
+while True:
+    answer = input("Why is the sky blue? ").strip().lower()
+    if answer == "just because":
+        break
 
 # PB:
-# answer = input("Why is the sky blue? ").strip().lower()
+answer = input("Why is the sky blue? ").strip().lower()
 
-# while answer != "just because":
-#     answer = input("why? ").strip().lower()
+while answer != "just because":
+    answer = input("why? ").strip().lower()
 
 # list of questions
 # random function

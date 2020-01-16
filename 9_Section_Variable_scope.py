@@ -44,17 +44,86 @@
 # # variable scopes must not overlap
 
 # # you can use the global value as long as you do not change it (automatically)
-a = 250
-def f1():
-    a = 100
+# a = 250
+# def f1():
+#     b = a + 10
+#     print(b)
 
+# print(f1())
+# # f1 does not have a variable called a inside the code so it looked outside and 
+# # found a global variable a = 250, b = 250 + 10 ... printed 260
+
+# def f2():
+#     a = 50
+#     print(a)
+
+# print(f2())
+# print(a)
+# # the global variable kept its value a = 260 and created a local variable instead a = 50
+
+# # Output:
+# # 60
+# # None
+# # 50
+# # None
+# # 250
+
+# # how to surpass Python - global a
+# global a = 100 would give error
+# a = 250
+# def f1():
+#     global a
+#     a = 100 # global
+#     print(a)
+
+# print(f1())
+
+
+# def f2():
+#     a = 50 # local
+#     print(a)
+
+# print(f2())
+# Output: 
+# 100
+# None
+# 50
+# None
+
+# a = [1,2,3]
+# def f1():
+#     a[0] = 5 # watch out - overwriting without global!!!
+#     print(a)
+
+# print(f1())
+
+# def f2():
+#     a = 50 # local
+#     print(a)
+
+# print(f2())
+# Output: 
+# [5, 2, 3]
+# None
+# 50
+# None
+
+# review:
+# 1) Two types of scope - Global & local
+# 2) Python functions create local scopes
+
+a = [1,2,3]
+def f1():
     print(a)
+
 print(f1())
 
 def f2():
-    a = 50
-
     print(a)
 
 print(f2())
-print(a)
+# Output
+# [1, 2, 3]
+# None
+# [1, 2, 3]
+# None

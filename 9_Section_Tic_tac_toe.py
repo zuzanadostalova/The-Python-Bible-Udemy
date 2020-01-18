@@ -104,15 +104,80 @@ def is_victory(icon):
       (board[1] == icon and board[4] == icon and board[7] == icon) or \
       (board[2] == icon and board[5] == icon and board[8] == icon) or \
       (board[0] == icon and board[4] == icon and board[8] == icon) or \
-      (board[2] == icon and board[4] == icon and board[6] == icon) or \
+      (board[2] == icon and board[4] == icon and board[6] == icon):
+        return True
+    else:
+        return False
+
+def is_draw():
+    if " " not in board:
+        return True
+    else:
+        return False
+
 
 # [0], [3], [6], all the rows   
-# all the columns
+# [0], [1], [2], all the columns
+# [0], [2] diagonal 
 
 while True: 
     print_board()
     player_move("X")
-    print_board
+    print_board()
+    if is_victory("X"):
+        print("X wins! Congratulations!") 
+        break
+    elif is_draw():
+        print("It is a draw!")
+        break
     player_move("O")
+    if is_victory("O"):
+        print_board() # for formatting reasons
+        print("O wins! Congratulations!")
+        break
+    elif is_draw():
+        print("It is a draw!")
+        break
 
+# Output: 
+# | | | |
+# | | | |
+# | | | |
+
+# Your turn, player X.
+# Enter your move (1-9): 7
+
+# | | | |
+# | | | |
+# |X| | |
+
+# Your turn, player O.
+# Enter your move (1-9): 1
+
+# |O| | |
+# | | | |
+# |X| | |
+
+# Your turn, player X.
+# Enter your move (1-9): 5
+
+# |O| | |
+# | |X| |
+# |X| | |
+
+# Your turn, player O.
+# Enter your move (1-9): 4
+
+# |O| | |
+# |O|X| |
+# |X| | |
+
+# Your turn, player X.
+# Enter your move (1-9): 3
+
+# |O| |X|
+# |O|X| |
+# |X| | |
+
+# X wins! Congratulations!
 

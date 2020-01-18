@@ -181,3 +181,12 @@ while True:
 
 # X wins! Congratulations!
 
+# or a draw 
+# |X|O|X|
+# |X|O|O|
+# |O|X|X|
+
+# It is a draw!
+
+# 64. lesson - Section overview
+# args and kwargs using * and **

@@ -165,8 +165,7 @@ class Fifty_Pence(Coin):
         }
         super().__init__(**data)
         
-class One_Pound(Coin): # delete pound class; make it inherit to Coin instead
-# it is going to get all of the methods
+class One_Pound(Coin):
     def __init__(self):
         data = {
             "original_value": 1.00,
@@ -184,7 +183,7 @@ class Two_Pound(Coin):
         data = {
             "original_value": 0.50,
             "clean_color": "silver",
-            "rusty_color": None,
+            "rusty_color": "greenish",
             "num_edges": 7,
             "diameter": 27.3,
             "thickness": 1.78,
@@ -192,5 +191,11 @@ class Two_Pound(Coin):
         }
         super().__init__(**data)
 
+coins = [One_Pence(), Two_Pence(), Five_Pence(), Ten_Pence(), Twenty_Pence(), Fifty_Pence(),
+        One_Pound(), Two_Pound()]
 
+for coin in coins:
+    arguments = [coin, coin.color, coin.value, coin.diameter, coin.thickness, 
+                coin.num_edges, coin.mass]
 
+string = "{} - Color: {}, value:{}, diameter(mm):{}, thickness(mm):{}, number of edges:{}, mass(g):{}".format(*arguments)

@@ -281,3 +281,6 @@ for coin in coins:
     print(string)
 
 # polymorphism - different version of the same object
+# be aware of string + print indentation 
+# def rust and clean inside each coin!
+# check the value of each coin if it is correct!

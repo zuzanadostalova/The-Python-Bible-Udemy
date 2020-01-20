@@ -101,12 +101,6 @@ class Coin: # general class
         else:
             self.color = self.rusty_color
 
-    def rust(self):
-        self.color = self.rusty_color # general category - we cannot say greenish
-
-    def clean(self):
-        self.color = self.clean_color # cannot say gold
-
     # def __del__(self): # destructor
     #     print("Coin spent!")
 
@@ -114,9 +108,16 @@ class Coin: # general class
         heads_options = [True, False]
         choice = random.choice(heads_options)
         self.heads = choice
+
+    def __str__(self):
+        if self.original_value >= 1:
+            return "£{} Coin".format(int(self.original_value))
+        
+        else:
+            return "{}p Coin".format(int(self.original_value * 100))
+
 class One_Pence(Coin):
     def __init__(self):
-
         data = {
             "original_value": 0.01,
             "clean_color": "bronze",
@@ -127,6 +128,12 @@ class One_Pence(Coin):
             "mass": 3.56
         }
         super().__init__(**data)
+
+        def rust(self):
+            self.color = self.rusty_color # general category - we cannot say greenish
+
+        def clean(self):
+            self.color = self.clean_color # cannot say gold
 
 class Two_Pence(Coin): 
     def __init__(self):
@@ -141,6 +148,12 @@ class Two_Pence(Coin):
         }
 
         super().__init__(**data)
+
+        def rust(self):
+            self.color = self.rusty_color # general category - we cannot say greenish
+
+        def clean(self):
+            self.color = self.clean_color # cannot say gold
 
 class Five_Pence(Coin): 
     def __init__(self):
@@ -175,6 +188,12 @@ class Ten_Pence(Coin):
         }
         super().__init__(**data)
 
+        def rust(self):
+            self.color = self.rusty_color # general category - we cannot say greenish
+
+        def clean(self):
+            self.color = self.clean_color # cannot say gold
+
 class Twenty_Pence(Coin):
     def __init__(self):
         data = {
@@ -188,6 +207,12 @@ class Twenty_Pence(Coin):
         }
         super().__init__(**data)
 
+        def rust(self):
+            self.color = self.rusty_color # general category - we cannot say greenish
+
+        def clean(self):
+            self.color = self.clean_color # cannot say gold
+
 class Fifty_Pence(Coin): 
     def __init__(self):
         data = {
@@ -200,6 +225,12 @@ class Fifty_Pence(Coin):
             "mass": 8.00
         }
         super().__init__(**data)
+
+        def rust(self):
+            self.color = self.rusty_color # general category - we cannot say greenish
+
+        def clean(self):
+            self.color = self.clean_color # cannot say gold
         
 class One_Pound(Coin):
     def __init__(self):
@@ -214,10 +245,16 @@ class One_Pound(Coin):
         }
         super().__init__(**data)
 
+        def rust(self):
+            self.color = self.rusty_color # general category - we cannot say greenish
+
+        def clean(self):
+            self.color = self.clean_color # cannot say gold
+
 class Two_Pound(Coin): 
     def __init__(self):
         data = {
-            "original_value": 0.50,
+            "original_value": 2.00,
             "clean_color": "gold&silver",
             "rusty_color": "greenish",
             "num_edges": 7,
@@ -226,12 +263,21 @@ class Two_Pound(Coin):
             "mass": 8.00
         }
         super().__init__(**data)
+    
+        def rust(self):
+            self.color = self.rusty_color # general category - we cannot say greenish
+
+        def clean(self):
+            self.color = self.clean_color # cannot say gold
 
 coins = [One_Pence(), Two_Pence(), Five_Pence(), Ten_Pence(), Twenty_Pence(), Fifty_Pence(),
         One_Pound(), Two_Pound()]
 
 for coin in coins:
-    arguments = [coin, coin.color, coin.value, coin.diameter, coin.thickness, coin.num_edges, coin.mass]
+    arguments = [coin, coin.color, coin.value, coin.diameter, coin.thickness,
+                coin.num_edges, coin.mass]
 
-string = "{} - Color: {}, value:{}, diameter(mm):{}, thickness(mm):{}, number of edges:{}, mass(g):{}".format(*arguments)
-print(string)
+    string = "{} - Color: {}, value:{}, diameter(mm):{}, thickness(mm):{}, number of edges:{}, mass(g):{}".format(*arguments)
+    print(string)
+
+# polymorphism - different version of the same object

@@ -80,3 +80,6 @@ x.withdraw(1)
 
 # bank
 # __str__ (self) for nice output
+
+# The last coding challenge
+print("Goodbye you beautiful people!")
